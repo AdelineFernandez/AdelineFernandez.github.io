@@ -1,0 +1,472 @@
+@font-face {
+    font-family: "font-1";
+    src: url(./Assets/1.\ Parisienne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "font-2";
+    src: url(./Assets/2.\ Glory-Regular.ttf)
+}
+
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+
+/******** Body ********/ 
+
+body {
+    background: url(./Assets/background.jpg) center/cover;
+    font-family : "font-2", Tahoma, Arial, serif;
+    font-size: 1.35rem;
+    line-height: normal;
+}  
+
+br {
+    content: "";
+    display: block;
+    margin-bottom: .5em;
+}
+
+
+#homepage, #about, #skills, #experience {
+    height: 100vh;
+    width: 100vw;
+}
+
+.about_text, .skills_text, .experience_text {
+    text-align: justify;
+    border: 0.05em solid;
+    padding: 20px 40px 30px 40px;
+    border-radius: 30px;
+    box-shadow: 10px -6px 7px 1px rgba(0,0,0,0.84);
+}
+
+h2 {
+    font-family: "font-1", cursive, serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 7px 5px 4px whitesmoke, 7px 7px 0px rgba(0,0,0, 5%);
+ }
+
+em {
+    font-style: normal;
+}
+
+section p {
+    line-height: 1.2em;
+} 
+
+img {
+    border-radius : 30px;
+    box-shadow: 10px -6px 7px 1px rgba(0,0,0,0.84);
+}
+
+
+
+/******** Header ********/
+
+#topbar {
+    height: 40px;
+    width: 100%;
+    background: #000000d1;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+}
+
+#ornament1 {
+    font-style: oblique;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+nav ul { 
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+header, h1, nav li, nav a {
+    font-family: "font-1", cursive, serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    list-style-type: none;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+ul:hover {
+    text-shadow: 3px 2px 3px #e49350;
+    transition: text-shadow .3s;
+}
+
+nav ul:hover li:not(:hover) {
+    opacity: 0.5;
+    transition: opacity .3s;
+}
+
+
+/******** Homepage ********/
+
+.box {
+    display: inline-block;
+}
+
+#rounded_circle {
+    border-radius: 50%;   
+}
+
+#picture {
+    position: relative;
+    top: 280px;
+    left: 280px
+}
+
+#ornament2 {
+    font-style: oblique;
+    font-weight: normal;
+}
+
+#ornament3 {
+    font-style: normal;
+    font-weight: bold;
+}
+
+#homepage_text {
+    font-size: 1.3em;
+    position: relative;
+    top: 240px;
+    left: 450px;
+    animation : homepage_animation 3s ease-in-out;
+}
+
+@keyframes homepage_animation {
+    from {
+        top: 240px;
+        left: 1350px;
+    }
+  
+    to {
+        top: 240px;
+        left: 450px;
+    }
+}
+
+
+/******** About ********/
+
+#about {
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+#board {
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
+.about_text {
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+
+/******** Skills ********/
+
+#skills {
+    display: flex;
+    align-items: center;
+}
+
+.skills_text {
+    margin-top: 80px;
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+
+#desk {
+    margin-right: 50px;
+    margin-left: 30px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+
+
+/******** Experience ********/
+
+#experience {
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+#bookcase {
+    margin-right: 50px;
+    margin-left: 30px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+
+.experience_text {
+    margin-top: 80px;
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.experience_description {
+    font-weight: bold;
+}
+
+
+/******** Contact ********/
+
+#contact {
+    height: 98%;
+    width: 100%;
+}
+ 
+#notebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    z-index: 0;
+    }
+
+.contact_title {
+    display: inline;
+    position: relative;
+    top: 260px;
+    left: 805px;
+    z-index: 1;
+}
+    
+ #linkedin {
+    position: relative;
+    top: 350px;
+    left: 685px;
+    box-shadow: none;
+    border-radius: 0%;
+    z-index: 1;
+}
+
+#email {
+    position: relative;
+    top: 352px;
+    left: 715px;
+    box-shadow: none;
+    border-radius: 0%;
+    z-index: 1;
+}
+
+
+/******** Footer ********/
+
+#footer{
+    position: relative;
+    padding-top: 40px;
+    bottom: 20px;
+    left: 30px;
+}
+
+
+/******** Responsive ********/
+
+@media only screen and (max-width: 1590px) {
+    
+    #homepage {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 230px;
+    }
+
+    #picture {
+        top: auto;
+        left: auto;
+    }
+
+    #homepage_text {
+        animation: none;
+        top:auto;
+        left:auto;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 150px 15px 15px 15px;
+    }
+
+    .contact_title {
+        position: inherit;
+    }
+
+    .contact_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        line-height: 80px;
+        width: 200px;
+        padding: 20px 40px 30px 40px;
+        margin-bottom: 50px;
+    }
+
+    #contact img {
+        position: inherit;
+    }
+
+    #notebook img {
+        max-width: 70%;
+        height: auto;
+        top: auto;
+        left: auto;
+    }
+
+}
+
+
+@media only screen and (max-width: 1510px) {
+    
+    #topbar {
+        position:static;
+        margin-bottom: 100px;
+    }
+
+
+    #homepage, #about, #skills, #experience {
+        height: 100%;
+        width: 100%;
+    }
+
+    #experience {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 150px 15px 15px 15px;
+    }
+
+    #bookcase {
+        margin-bottom: 50px;
+    }
+
+    .experience_text {
+        margin: 0 30px;
+    }
+
+
+@media only screen and (max-width: 1370px) {
+    
+    #about {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 150px 15px 15px 15px;
+    }
+
+    #board {
+        margin-bottom: 50px;
+    }
+
+    #skills {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        margin: 150px 15px 15px 15px;
+    }
+
+    #desk {
+        margin-bottom: 50px;
+    }
+
+    .about_text, .skills_text {
+        margin: 0 30px;
+    }
+
+@media only screen and (max-width: 970px) {
+
+    body {
+        background: url(./Assets/phone_background.jpg) no repeat;
+    }
+    
+    #topbar, nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: flex-start;
+        background: none;
+    }
+
+    header h1, nav a {
+        font-weight: bolder;
+        color: black;
+    }
+
+    h1 {
+        display: block;
+    }
+
+    h1, nav {
+        padding: 0;
+        margin: 10px;
+    }
+      
+    #homepage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 230px;
+    }
+
+    #picture {
+        margin-bottom: 50px;
+    }
+
+    #homepage_text {
+        text-align: center;
+    }
+
+    #board img, #desk img, #bookcase img {
+        max-width: 70%;
+        height: auto;
+        top: auto;
+        left: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    #homepage {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+    }
+}
