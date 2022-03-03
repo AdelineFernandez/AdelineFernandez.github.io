@@ -411,10 +411,6 @@ h3 {
     }
 
 @media screen and (max-width: 970px) {
-
-    body {
-        background-image: url(./Assets/phone_background.jpg);
-    }
     
     #topbar, nav ul {
         display: flex;
