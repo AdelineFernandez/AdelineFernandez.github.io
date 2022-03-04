@@ -682,7 +682,7 @@ h3 {
 @media only screen and (max-width: 970px) {
 
     body {
-        background: url(./Assets/phone_background1.jpg) center/cover;
+        background: url(./Assets/phone_background.jpg) center/cover;
     }
     
     #topbar, nav ul {
