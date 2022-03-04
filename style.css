@@ -18,7 +18,7 @@
 /******** Body ********/ 
 
 body {
-    background: url(./Assets/background.jpg) center/cover fixed;
+    background: url(./Assets/background.jpg) center/cover;
     font-family : "font-2", Tahoma, Arial, serif;
     font-size: 1.35rem;
     line-height: normal;
